@@ -9,6 +9,9 @@ $(document).ready(function(){
 		$.ajax({
 		  url: url+"/login",
 		  method: "POST",
+		  xhrFields: {
+		      withCredentials: true
+		  },
 		  data: data
 		}).done(function(data) {
 			if(data.success == "false")
@@ -19,6 +22,8 @@ $(document).ready(function(){
 		  	{
 			  	window.location.href = "main.html";
 		  	}
+		}).fail(function(error){
+			alert("error");
 		});
 	})
 })
