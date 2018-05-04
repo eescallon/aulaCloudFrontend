@@ -59,9 +59,13 @@
 						<input type="text" style="width:350px;" class="form-control" id="modalApellido">
 					</div>
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">F. Nacimiento:</span>
-						<input type="text" style="width:350px;" class="form-control" id="modalFecha">
+						<span class="input-group-addon" style="width:150px;">Telefono:</span>
+						<input type="number" style="width:350px;" class="form-control" id="modaltelefono"/>
 					</div>
+					<div class="form-group input-group">
+						<span class="input-group-addon" style="width:150px;">Dirección:</span>
+						<input type="text" style="width:350px;" class="form-control" id="modaldireccion">
+					</div>					
 
 					<div class="form-group">
 					 <label for="exampleInputName2">Fecha de Nacimiento</label> 
@@ -74,19 +78,27 @@
 					</div>
 
 
-					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">F. Sexo:</span>
-						<input type="text" style="width:350px;" class="form-control" id="modalFecha">
+					<div class="form-group">
+						<span class="input-group-addon" style="width:150px;" class="form-control" id="modalFecha" ;">Sexo:</span>
+						<select  name="Tipos_de_sexo" class="form-control">    
+					       <option value="Masculino" selected="selected">Masculino</option>
+					       <option value="Femenino">Femenino</option>
+   						</select>
 					</div>
 					<div class="form-group input-group">
 						<span class="input-group-addon" style="width:150px;">Email:</span>
 						<input type="text" style="width:350px;" class="form-control" id="modalEmail">
+					</div>
+
+                  <div class="form-group input-group">
+						<span class="input-group-addon" style="width:150px;">contraseña:</span>
+						<input type="password" style="width:350px;" class="form-control" id="modalcontraseña">
 					</div>					
 				</div>
 				</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                    <button type="button" id="btnSubmit" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> </i> Actualizar</button>
+                    <button type="button" id="btnSubmit" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> </i>Aceptar</button>
                 </div>
             </div>
         </div>
