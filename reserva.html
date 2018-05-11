@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula Cloud</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/libs/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/libs/css/offcanvas.css">
+	<link rel="stylesheet" type="text/css" href="css/libs/iconic/font/css/open-iconic-bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="css/libs/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light" cz-shortcut-listen="true">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand mr-auto mr-lg-0" href="#">Bienvenido Fulano de Tal</a>
+
+      <div style="width: 199%; text-align: right;">
+      	<button class="btn btn-default">
+		     <span class="oi oi-menu" title="menu" aria-hidden="true"></span>
+		  </button>
+      </div>
+    </nav>
+
+
+
+    <div class="nav-scroller bg-white box-shadow">
+     <nav class="nav nav-underline">
+        <a class="nav-link active" href="#">Nueva Reserva</a>
+      </nav>
+    </div>
+
+<div class="container-fluid bg-light py-3">
+    <form id="contact-form" method="post" action="contact.php" role="form">
+        <div class="messages"></div>
+        <div class="controls">
+            <div class="row">
+                
+
+                <div class="col-sm-4">
+                	<label for="form_name">Sala *</label>
+                    <div class="form-group">
+                        
+                        <select id="select_room" class="form-control"  required="required" >
+				        <option>Sala1</option>
+				        <option>Sala2</option>
+				        <option>Sala3</option>
+				        <option>Sala4</option>				        				        				        
+				        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-sm-4">
+ 					<label for="form_name"></label>               	
+                	<div class="form-group">
+
+					 <input type="checkbox" class="form-group"> Todo el Día
+									        
+				    </div>	
+				</div>
+               
+            </div>
+       
+
+
+        <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="form_name">Fecha Inicial *</label>
+                        <input id="form_name" type="date" name="surname" class="form-control" placeholder="" required="required" data-error="name is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="form_email">Hora Inicial</label>
+                        <input id="form_email" type="time" name="email" class="form-control" placeholder="" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                
+            </div>
+        <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="form_name">Fecha Final *</label>
+                        <input id="form_name" type="date" name="surname" class="form-control" placeholder="" required="required" data-error="name is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="form_email">Hora Final</label>
+                        <input id="form_email" type="time" name="hora_final" class="form-control" placeholder="" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+
+
+
+
+       
+
+		  			<div class="row">
+		                <div class="col-sm-4">
+		                    <div class="form-group">
+		                        <label for="form_name">Nombre *</label>
+		                        <input id="form_name" type="text" name="nombre_reserva" class="form-control" placeholder="Nombre de Reserva" required="required" data-error="name is required.">
+		                        <div class="help-block with-errors"></div>
+		                    </div>
+		                </div>
+							<div class="col-sm-4">
+				                <div class="form-group">
+				                    <label for="form_message">Descripción *</label>
+				                    <textarea id="form_message" name="message" class="form-control" placeholder="Descripción"  data-error="send a message."></textarea>
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+		            </div>
+		     </div>
+
+ 
+ 
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+                <div class="col-md-12">
+                <input type="submit" class="btn btn-warning btn-send" value="Guardar">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> Estos Campos son Obligatorios.</p>
+            </div>
+        </div>
+    </form>
+</div>								       
+
+
+
+
+
+			
+		    <footer class="mainfooter" role="contentinfo">
+			  <div class="footer-bottom">
+			    <div class="container">
+			          <p class="text-xs-center">&copy; Copyright 2018 - Estudiantes de Ingenieria de Sistemas - Universidad Remington.</p>
+			    </div>
+			  </div>
+			</footer>
+
+
+
+
+</body>
+
+</html>
