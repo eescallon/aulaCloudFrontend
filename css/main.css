@@ -43,6 +43,10 @@ footer a:hover{
 }
 .col-subnav .active{
   border-top:5px solid orange;
- background: white;
+  background: white;
   color: black;
+}
+
+.container2{
+  margin-left: 20% !important;
 }

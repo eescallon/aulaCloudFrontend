@@ -4,15 +4,14 @@ $(document).ready(function(){
 		var password = $("#password").val();
 		var data = {
 			"user": email,
-			"pass": password
+			"password": password
 		}
 		$.ajax({
 		  url: url+"/login",
 		  method: "POST",
-		  xhrFields: {
-		      withCredentials: true
-		  },
-		  data: data
+		  dataType: 'jsonp',
+		  "Content-Type": "application/json",
+		  data: JSON.stringify(data)
 		}).done(function(data) {
 			if(data.success == "false")
 		  	{
@@ -28,4 +27,4 @@ $(document).ready(function(){
 	})
 })
 
-var url = "http://localhost:8000";
+var url = "http://127.0.0.1:8000";
