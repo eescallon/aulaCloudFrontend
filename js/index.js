@@ -9,8 +9,6 @@ $(document).ready(function(){
 		$.ajax({
 		  url: url+"/login",
 		  method: "POST",
-		  dataType: 'jsonp',
-		  "Content-Type": "application/json",
 		  data: JSON.stringify(data)
 		}).done(function(data) {
 			if(data.success == "false")
