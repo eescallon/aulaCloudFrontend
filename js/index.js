@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	var user = getUser();
+	if(user != null)
+	{
+		window.location.href = "main.html";
+	}
 	$("#btnLogin").click(function(){
 		var email = $("#email").val();
 		var password = $("#password").val();
@@ -14,10 +19,11 @@ $(document).ready(function(){
 		}).done(function(respuesta) {
 			if(respuesta.success == false)
 		  	{
-		  		alert("Usuario o contraseña incorrecta");
+		  		alertify.error("Usuario o contraseña incorrecta");
 		  	}
 		  	else
 		  	{
+		  		localStorage.setItem("userAulaCloud", JSON.stringify(respuesta.data));
 			  	window.location.href = "main.html";
 		  	}
 		}).fail(function(error){
@@ -26,4 +32,3 @@ $(document).ready(function(){
 	})
 })
 
-var url = "http://127.0.0.1:8000";

@@ -6,14 +6,18 @@
 	<link rel="stylesheet" type="text/css" href="css/libs/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/libs/css/offcanvas.css">
 	<link rel="stylesheet" type="text/css" href="css/libs/iconic/font/css/open-iconic-bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="js/libs/css/alertify.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
 	<script src="js/libs/jquery.min.js"></script>
 	<script src="css/libs/js/bootstrap.min.js"></script>
+	<script src="js/libs/alertify.min.js"></script>
+	<script src="js/variables.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body class="bg-light" cz-shortcut-listen="true">
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand mr-auto mr-lg-0" href="reserva.html">Bienvenido Fulano de Tal</a>
+      <a class="navbar-brand mr-auto mr-lg-0" href="reserva.html">Bienvenido <span id="spanNombreUsuario"></span></a>
 
       <!-- <div style="width: 199%; text-align: right;">
       	<button class="btn btn-default">
@@ -47,40 +51,17 @@
 		      	<div class="card border-success mb-3">
 					<div class="card-header text-white bg-success">Mis Reservas</div>
 					<table class="table table-striped">
-								<tr>
-									<th>Fecha</th>
-									<th>Hora</th>					
-									<th>Sala</th>
-									<th>Horas Reservadas</th>
-									<th>Todo el Día</th>
-									<th>Editar</th>																			
-								</tr>
-							<tbody>
-							     <tr>
-							        <td>01/05/2018 - 01/05/2018</td>
-							        <td>17:00</td>
-							        <td>Sala 1</td>
-							        <td>4</td>
-							        <td>No</td>
-							        <td>
-								      	<button class="btn btn-default">
-										     <span class="oi oi-menu" title="menu" aria-hidden="true"></span>
-									    </button>
-									</td>
-							     </tr>
-							     <tr>
-							        <td>01/15/2018 - 01/15/2018</td>
-							        <td>10:00</td>
-							        <td>Sala 1</td>
-							        <td>8</td>
-							        <td>Si</td>
-							        <td>
-								      	<button class="btn btn-default">
-										     <span class="oi oi-menu" title="menu" aria-hidden="true"></span>
-									    </button>
-									</td>							        
-							     </tr>
-							</tbody>
+						<thead>
+							<tr>
+								<th>Fecha</th>
+								<th>Hora</th>
+								<th>Sala</th>
+								<th>Todo el Día</th>
+								<th>Acciones</th>
+							</tr>
+						</thead>
+						<tbody id="tbodyMisReservaciones">
+						</tbody>
 					</table>
 				</div>
 		    </main>
