@@ -9,9 +9,10 @@ $(document).ready(function(){
 		$.ajax({
 		  url: url+"/login",
 		  method: "POST",
+		  header: {"Authorization": "true"},
 		  data: JSON.stringify(data)
-		}).done(function(data) {
-			if(data.success == "false")
+		}).done(function(respuesta) {
+			if(respuesta.success == false)
 		  	{
 		  		alert("Usuario o contraseña incorrecta");
 		  	}
